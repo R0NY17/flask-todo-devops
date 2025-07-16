@@ -67,7 +67,7 @@ jobs:
           docker push ${{ secrets.DOCKER_USERNAME }}/myapp:latest
 
   health_check:
-    name: 🩺 Health Check
+    name: Health Check
     runs-on: ubuntu-latest
     needs: build
     steps:
